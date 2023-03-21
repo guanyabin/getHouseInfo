@@ -19,7 +19,6 @@ listYData=[]
 for i in range(0,number):
     name=str(excelFile["name"][i])
     listName.append(name)
-    print(name)
     href=str(excelFile["href"][i])
     # 访问页面，获取页面HTML-得到小区的栋数和户数
     res = requests.get(href)
@@ -50,7 +49,6 @@ for i in range(0,number):
         # <span mendian="113.752385,34.766342" xiaoqu="[113.755911,34.76678]" class="actshowMap">永威东棠店</span> 
         xyDataPath="/html/body/div[6]/div[2]/div[2]/div[7]/span[2]/span"
         xyData= selector.xpath(xyDataPath)[0].attrib
-        print(xyData)# {'mendian': '113.752385,34.766342', 'xiaoqu': '[113.755911,34.76678]', 'class': 'actshowMap'}
         xyStr=xyData["xiaoqu"]
         xyStr=xyStr.replace("[","")
         xyStr=xyStr.replace("]","")
