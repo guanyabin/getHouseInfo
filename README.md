@@ -1,4 +1,5 @@
 # getHouseInfo
+# guanyabin2010@163.com,2023年3月
 python代码实现爬取链家网站小区信息，共四个python文件，基于Python3.8.13运行，需要安装代码中对应的第三方库。
 1、第一步，运行getHouseInfo01_github.py，获取小区的名称和对应详情页面的href。
 注意：不同地区的数据需要修改页面的访问路径，结果文件的保存路径。生成的execl默认会追加一列ID，可自行处理，保留或者删除。
